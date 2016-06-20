@@ -12,6 +12,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
+Plugin 'satanas/rename.vim' " Allows you to do 
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
