@@ -1,2 +1,2 @@
-# vim-config
-Configuration for .vimrc
+# My VIM Configuration
+Contains all of my plugins, snippets, mappings, etc ...
