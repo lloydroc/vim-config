@@ -12,7 +12,7 @@ set noerrorbells visualbell t_vb=
 set autowriteall
 
 "---------------------Visuals---------------"
-colorscheme atom-dark
+colorscheme atom-dark           " https://github.com/gosukiwi/vim-atom-dark
 set t_CO=256
 set guifont="Fira Code":h17
 set guioptions-=l
