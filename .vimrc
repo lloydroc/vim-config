@@ -76,3 +76,4 @@ if executable('ag')
 " to use w and W and e and E to navigate words
 " Jump in with CTRL+[, back with CTRL+O
 " Can see filetype by doing :set filetype?
+" Expand folds with za and collapse with zz
