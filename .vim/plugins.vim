@@ -1,6 +1,3 @@
-
-" First need git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-set nocompatible              " be iMproved, required
 filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -12,7 +9,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
-
-" All of your Plugins must be added before the following line
+Plugin 'nathanalderson/yang.vim'
+Plugin 'jiangmiao/auto-pairs'
 call vundle#end()            " required
 filetype plugin indent on    " required
