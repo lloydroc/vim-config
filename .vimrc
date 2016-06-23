@@ -44,8 +44,8 @@ nmap <Leader><space> :nohlsearch<cr>
 "---------------------Mappings------------"
 "Edit the vimrc file with /ev
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
-nmap <Leader>es :e ~/.vim/snippets/
-nmap <Leader>ep :e ~/.vim/plugins.vim
+nmap <Leader>es :e ~/.vim/snippets/<cr>
+nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
 "Make NERDTree easier to toggle with Command-1
 nmap <D-1> :NERDTreeToggle<cr>
 nmap <c-R> :CtrlPBufTag<cr>
