@@ -35,6 +35,7 @@ nmap <C-L> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
+nmap <Leader>, $A;<esc>
 "---------------------Search---------------"
 set hlsearch
 set incsearch
