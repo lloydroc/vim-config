@@ -23,7 +23,8 @@ autocmd Filetype make setlocal ts=4 sw=4
 "---------------------Visuals---------------"
 colorscheme elflord " see /Applications/MacVim.app/Contents/Resources/vim/runtime/colors
 " set t_CO=256
-set guifont="Fira Code":h17
+set guifont=Fira_Code:h17
+set macligatures
 set guioptions-=l
 set guioptions-=L
 set guioptions-=r
@@ -35,7 +36,6 @@ nmap <C-L> <C-W><C-J>
 nmap <C-K> <C-W><C-K>
 nmap <C-L> <C-W><C-L>
 nmap <C-H> <C-W><C-H>
-nmap <Leader>, $A;<esc>
 "---------------------Search---------------"
 set hlsearch
 set incsearch
@@ -58,7 +58,7 @@ augroup autosourcing
 augroup END
 "---------------------Plugins------------"
 "/ CtrlP
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|class'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
 	  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
