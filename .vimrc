@@ -59,6 +59,7 @@ augroup END
 "---------------------Plugins------------"
 "/ CtrlP
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|class'
+let g:ctrlp_match_window = 'top,order:ttb,min:1,max:30,results:30'
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 if executable('ag')
 	  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
