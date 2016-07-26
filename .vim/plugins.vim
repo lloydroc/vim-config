@@ -11,5 +11,6 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 Plugin 'nathanalderson/yang.vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'derekwyatt/vim-scala'
 call vundle#end()            " required
 filetype plugin indent on    " required
