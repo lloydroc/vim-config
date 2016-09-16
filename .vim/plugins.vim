@@ -12,5 +12,6 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'nathanalderson/yang.vim'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'bronson/vim-trailing-whitespace'
 call vundle#end()            " required
 filetype plugin indent on    " required
