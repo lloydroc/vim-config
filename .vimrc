@@ -8,6 +8,7 @@ let mapleader = "/"
 set linespace=15
 set noerrorbells visualbell t_vb=
 set autowriteall
+set laststatus=2 "Always show status bar
 "---------------------Tabs---------------"
 " ts = columns tabs is, sw = width on indent operations
 " expandtab will replace a tab with the number of spaces in ts
