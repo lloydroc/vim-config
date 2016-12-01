@@ -22,7 +22,7 @@ autocmd Filetype xml setlocal ts=4 sw=4 expandtab
 autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 autocmd Filetype make setlocal ts=4 sw=4 
 "---------------------Visuals---------------"
-colorscheme elflord " see /Applications/MacVim.app/Contents/Resources/vim/runtime/colors
+colorscheme candystripe " see /Applications/MacVim.app/Contents/Resources/vim/runtime/colors or the ~/.vim/colors file
 " set t_CO=256
 set guifont=Fira_Code:h17
 set macligatures
