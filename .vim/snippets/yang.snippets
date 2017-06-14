@@ -1,0 +1,65 @@
+snippet base
+	module ${1} {
+		namespace "${2}";
+		prefix ${3};
+
+		organization "${4}";
+		augment /ncs:services {
+
+		}
+	}
+snippet senum
+	leaf ${1} {
+		type enumeration {
+			enum "${2}";
+		}
+	}
+snippet leaf
+	leaf ${1} {
+		type ${2};
+	}
+snippet leafstr
+	leaf ${1} {
+		type string;
+	}
+snippet sls
+	leaf ${1} { type string; }
+snippet sle
+	leaf ${1} { type empty; }
+snippet sl
+	leaf ${1} { type ${2}; }
+snippet ll
+	leaf-list ${1} {
+		type ${2} {
+
+		}
+	}
+snippet info
+	tailf:info "${1}";
+snippet slist
+	list ${1} {
+		key ${2:};
+		leaf $2 { type ${3}; }
+	}
+snippet scont
+	container ${1} {
+
+	}
+
+snippet sap
+	uses ncs:service-data;
+	ncs:servicepoint "${1}";
+
+snippet desc
+	description "${1}";
+
+snippet sui
+	leaf ${1} { type uint32; }
+snippet sp4
+	leaf ${1} { type inet:ipv4-prefix; }
+snippet sa4
+	leaf ${1} { type inet:ipv4-address; }
+snippet sp6
+	leaf ${1} { type inet:ipv6-prefix; }
+snippet sa6
+	leaf ${1} { type inet:ipv6-address; }
