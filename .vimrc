@@ -16,19 +16,19 @@ set laststatus=2 "Always show status bar
 autocmd Filetype sh setlocal ts=4 sw=4 expandtab
 autocmd Filetype cpp setlocal ts=4 sw=4 expandtab
 autocmd Filetype c setlocal ts=4 sw=4 expandtab
-autocmd Filetype html setlocal ts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sw=2 expandtab iskeyword=@,48-57,_,-
 autocmd Filetype javascript setlocal ts=2 sw=2 expandtab
 autocmd Filetype java setlocal ts=4 sw=4 expandtab
 autocmd Filetype scala setlocal ts=4 sw=4 expandtab
 autocmd Filetype php setlocal ts=2 sw=2 expandtab
-autocmd Filetype yang setlocal ts=2 sw=2 expandtab
+autocmd Filetype yang setlocal ts=2 sw=2 expandtab autoindent smartindent iskeyword=@,48-57,_,-
 autocmd Filetype python setlocal ts=2 sw=2 expandtab
-autocmd Filetype xml setlocal ts=2 sw=2 expandtab
-autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
-autocmd Filetype make setlocal ts=4 sw=4
+autocmd Filetype xml setlocal ts=2 sw=2 expandtab iskeyword=@,48-57,_,-
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab iskeyword=@,48-57,_,-
+autocmd Filetype make setlocal ts=4 sw=4 iskeyword=@,48-57,_,-
 autocmd Filetype perl setlocal ts=4 sw=4 expandtab
-autocmd Filetype lux setlocal ts=2 sw=2 expandtab
-autocmd BufNewFile,BufRead,FileReadPost,FilterReadPost * if match(getline(1),"\.lux") >= 0 | set filetype=lux | endif
+autocmd Filetype python setlocal ts=2 sw=2 expandtab
+autocmd Filetype lux setlocal ts=2 sw=2 expandtab iskeyword=@,48-57,_,-
 "---------------------Visuals---------------"
 set background=dark
 colorscheme solarized " see /Applications/MacVim.app/Contents/Resources/vim/runtime/colors or ~/.vim/colors
@@ -57,12 +57,14 @@ nmap <Leader><space> :nohlsearch<cr>
 nmap <Leader>ev :tabedit $MYVIMRC<cr>
 nmap <Leader>es :e ~/.vim/snippets/<cr>
 nmap <Leader>ep :e ~/.vim/plugins.vim<cr>
+nmap <Leader>ez :e ~/.zshrc<cr>
 nmap <Leader>make :!make<cr>
 nmap <Leader>mclean :!make clean<cr>
 "Make NERDTree easier to toggle with Command-1
 nmap <D-1> :NERDTreeToggle<cr>
 nmap <c-t> :CtrlPBufTag<cr>
 nmap <c-r> :CtrlPMRUFiles<cr>
+nmap <c-c> :CtrlPClearAllCaches<cr>
 "Remove trailing whitepace
 nmap <Leader>rtw :%s/\s\+$//e<CR>
 "---------------------Auto-Commands------------"
@@ -97,3 +99,7 @@ nmap gm :call cursor(0, len(getline('.'))/2)<cr>
 " Jump in with CTRL+[, back with CTRL+O
 " Can see filetype by doing :set filetype?
 " Expand folds with za and collapse with zz
+" ysiw[ will use vim-surround to put [] around something
+" dst will remove the surrounding tag
+" Ctrl-n will do multi-cursor and hit c to change
+" :'<,'>!xmllint --format - format xml
